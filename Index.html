@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="nav">
+        <img src="data:image/jpeg;base64,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" alt="">
+  
+        <a href="#home">HOME</a>
+        <a href="#about-us">ABOUT US</a>
+        <a href="#container">SERVICES</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#container1">CAREER</a>
+        <a href="#career">CONTACT US</a>
+        <h4><a href="https://www.facebook.com/Thevedhindia/"><i class="fa-brands fa-facebook"></i></a></h4>
+        <h4><i class="fa-brands fa-pinterest"></i></h4>
+        <h4><i class="fa-brands fa-youtube"></i></h4>
+        <h4><i class="fa-brands fa-linkedin-in"></i></h4>
+        
+    </div>
+   <div id="home">
+
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <video autoplay loop muted src="https://cdn.pixabay.com/video/2021/11/08/95126-645704295_large.mp4"></video>
+    <div id="main">
+        <div id="page1">
+            <h2>You've got a business,we have  got brilliant minds</h2>
+            <h1>Welcome To VedhIndia</h1>
+            
+        </div>
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in" >
+                    <h4>We make your brand success.</h4>
+                    <h4>Building Brand With Purpose and Passion.</h4>
+                    <h4>Providing brilliant ideas for your business</h4>
+                </div>
+            </div>
+          </div>
+            <br><br><br><br>
+            <div id="about-us">
+              <img src="https://www.vedhindia.com/images/marketing-statergy.jpg" alt="">
+              <div id="about-us-in">
+                <h3>About Us</h3>
+                <h4>We Do Awesome Design & Code</h4>
+                <p>At Vedh, we specialize in brand marketing across Offline and Online media. Our focus on creativity enables you to strengthen your marketing initiatives, thus helping you connect effectively to more customers. We have 9+ years of experience so we bring our diverse background of advertising, design, branding, public relations, research and strategic planning to work for your company.  </p>
+              </div>
+              <img src="https://www.vedhindia.com/images/web-service.jpg" alt="">
+            </div>
+<div class="responsive-container-block bigContainer">
+  <div class="responsive-container-block Container">
+    <div class="responsive-container-block leftSide">
+      <p class="text-blk heading">
+        Meet Our Creative Team
+      </p>
+      <p class="text-blk subHeading">
+        We are a team of enthusiastic, imaginative minds that love to push the limits of creativity. Our multi disciplinary team brings to the table rich experience in creative designing, market communication and promotion.
+Director and Principal Designer Anil Khedkar leads the team at Vedh India. He is intensely passionate about graphic designing; his superlative logos and brochure concepts bear testimony to his penchant for design. He also brings a valuable experience in Print Production and Packaging. Endowed with fine leadership skills and strong business acumen, His stewardship is taking Vedh India towards a new horizon of success.
+      </p>
+    </div>
+    <div class="responsive-container-block rightSide">
+      <img class="number1img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET32.jpg">
+      <img class="number2img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d14.png">
+      <img class="number3img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b245.png">
+      <img class="number5img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Customer supports.png">
+      <iframe allowfullscreen="allowfullscreen" class="number4vid" poster="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b242.png" src="https://www.youtube.com/embed/svg%3E?">
+      </iframe>
+      <img class="number7img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d51.png">
+      <img class="number6img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d12.png">
+    </div>
+  </div>
+</div>
+<div id="container">
+  <div class="service-wrapper">
+    <div class="service">
+    <h1>Our Service</h1>
+    <div class="cards">
+    <div class="card">
+      <h3>UI AND UX DESIGN</h3>
+      <img src="https://cdn.pixabay.com/photo/2015/05/28/14/53/ux-788002_1280.jpg" alt="">
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+
+    <div class="card">
+      <h3>Unique, truly responsive Websites Design & Development</h3>
+      <img src="https://www.vedhindia.com/images/uidesign.png" alt="">
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <img src="https://cdn.pixabay.com/photo/2020/12/09/03/10/digital-marketing-5816304_1280.jpg" alt="">
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card">
+      <h3>Scientifically Logo Design</h3>
+      <img src="https://www.vedhindia.com/images/logo-design1.jpg" alt="">
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card">
+      <h3>Social Media</h3>
+      <img src="https://cdn.pixabay.com/photo/2015/11/05/09/52/touch-screen-1023966_1280.jpg" alt="">
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card">
+      <h3>Mobile App (IOS & Android)</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uJRl4N_bo9JToxBfd07SxqCvhiC2_2UB4MPVCnV6VQ&s" alt="">
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div id="portfolio">
+<div class="carousel">
+  <!-- list item -->
+  <div class="list">
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/1.jpg">
+          <div class="content">
+              <div class="author">We are awesome designer</div>
+              <div class="title">Portfolio</div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/3.jpg">
+          <div class="content">
+              <div class="author">We are awesome designer</div>
+              <div class="title">Portfolio</div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/4.jpg">
+          <div class="content">
+            <div class="author">We are awesome designer</div>
+            <div class="title">Portfolio</div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/6.jpg">
+          <div class="content">
+            <div class="author">We are awesome designer</div>
+            <div class="title">Portfolio</div>
+          </div>
+      </div>
+  </div>
+  <!-- list thumnail -->
+  <div class="thumbnail">
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/2.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/8.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/7.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/9.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/10.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/11.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/12.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/13.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://www.vedhindia.com/images/portfolio/14.jpg">
+          <div class="content">
+              <div class="title">
+                  Name Slider
+              </div>
+              <div class="description">
+                  Description
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="arrows">
+      <button id="prev"></button>
+      <button id="next"></button>
+  </div>
+</div>
+<div id="container1">
+  <div class="service-wrapper">
+    <div class="service">
+    <h1>Career</h1>
+   <h3 style="font-size: 25px; padding: 4%; padding-bottom: 2%;">WHAT WE LOOK FOR?</h3>
+    <div class="cards1">
+    <div class="card1">
+      
+      <h3>01. Positive Attitude</h3>
+      <br>
+      <p>Has the ability to blend in our culture, can embody our core values and holds a positive approach.</p>
+    </div>
+
+    <div class="card1">
+      <h3>02. Learn and Grow</h3>
+      <br>
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card1">
+      <h3>03. High Goals</h3>
+      <br>
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card1">
+      <h3>04. Self-Motivated</h3>
+      <br>
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card1">
+      <h3>05. Add Value</h3>
+      <br>
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>
+    <div class="card1">
+      <h3>06. Knowledge & Capabilities</h3>
+      <br>
+      <p>The UI and UX Design help to win the consumers’ confidence and make them use your application or website providing them what they are looking for. The number of consumers you are getting on your website / application can measure the success of the great UI and UX.</p>
+    </div>  
+  </div>
+</div>
+</div>
+</div>
+
+<div id="career">
+<h1>Contact Us</h1>
+<div class="container3">
+
+  <div class="form">
+    <div class="contact-info">
+      <h3 class="title">We are ready to help</h3>
+      <p class="text">
+        If you would like to collaborate together, grab some tea, or just say hello – feel free to message me here anytime. Have a wonderful day!
+      </p>
+
+      <div class="info">
+        <div class="information">
+          <img src="img/email.png" class="icon" alt="" />
+          <p>info@vedhindia.com</p>
+        </div>
+        
+      </div>
+
+      <div class="social-media">
+        <p>Connect with us :</p>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <span class="circle one"></span>
+      <span class="circle two"></span>
+
+      <form action="index.html" autocomplete="off">
+        <h3 class="title">Contact us</h3>
+        <div class="input-container">
+          <input type="text" name="name" class="input" />
+          <label for="">Username</label>
+          <span>Username</span>
+        </div>
+        <div class="input-container">
+          <input type="email" name="email" class="input" />
+          <label for="">Email</label>
+          <span>Email</span>
+        </div>
+        <div class="input-container">
+          <input type="tel" name="phone" class="input" />
+          <label for="">Phone</label>
+          <span>Phone</span>
+        </div>
+        <div class="input-container textarea">
+          <textarea name="message" class="input"></textarea>
+          <label for="">Message</label>
+          <span>Message</span>
+        </div>
+        <input type="submit" value="Send" class="btn" />
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+        
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+    integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+</script> 
+  <script src="index.js"></script>
+</body>
+</html>
